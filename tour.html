@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top-header">
+    <div class="header-left">
+      <img src="photo/logo.png" alt="AgriCulture" class="logo">
+    </div>
+    <div class="header-right">
+      <a href="#">Log in</a>
+      <span>/</span>
+      <a href="#">Sign in</a>
+      <a href="#" class="cart">🛒 Cart</a>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About us ▾</a></li>
+      <li><a href="#">Our system</a></li>
+      <li><a href="tour.html" class="active">Tour</a></li>
+      <li><a href="#">Discount</a></li>
+      <li><a href="#">Business cooperation</a></li>
+      <li><a href="#">Recruitment</a></li>
+    </ul>
+  </nav>
+
+  <!-- PHẦN TÌM KIẾM -->
+ <section class="search-section">
+  <div class="search-bar">
+    <input type="text" id="search-input" placeholder="Search tour name or location...">
+    <button onclick="searchTour()">🔍</button>
+  </div>
+
+  <div class="region-filter">
+    <button class="region-btn" onclick="toggleRegionMenu()">Region ▾</button>
+    <ul class="region-list">
+      <li><button onclick="filterRegion('North')">North</button></li>
+      <li><button onclick="filterRegion('Centre')">Centre</button></li>
+      <li><button onclick="filterRegion('South')">South</button></li>
+      <li><button onclick="filterRegion('All')">All</button></li>
+    </ul>
+  </div>
+</section>
+
+  <!-- DANH SÁCH TOUR -->
+  <section class="tour-list" id="tour-list">
+    <!-- Tour 1 -->
+     <a href="detail.html" class="tour-link">
+    <div class="tour-card" data-region="North">
+      <img src="photo/tronglua.jpg" alt="Sapa Mountain">
+      <h4>Rice farming</h4>
+      <p class="region">Region: North</p>
+      <p class="location">15/23 Bac Lieu</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 75%; background: linear-gradient(to right, #04880a, #ce5151);"></div>
+      </div>
+      <small>15 / 20 registered</small>
+    </div>
+    </a>
+
+    <!-- Tour 2 -->
+    <div class="tour-card" data-region="Centre">
+      <img src="photo/rau.jpg" alt="Hue Ancient City">
+      <h4>Vegetable farming</h4>
+      <p class="region">Region: Centre</p>
+      <p class="location">5/17 Can Tho</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 50%; background: linear-gradient(to right, #04880a, #ce5151);"></div>
+      </div>
+      <small>8 / 16 registered</small>
+    </div>
+
+    <!-- Tour 3 -->
+    <div class="tour-card" data-region="South">
+      <img src="photo/che.png" alt="Mekong Delta">
+      <h4>Tea harvesting</h4>
+      <p class="region">Region: South</p>
+      <p class="location">2/20 Thai Nguyen</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 90%; background: linear-gradient(to right, #04880a, #ce5151);"></div>
+      </div>
+      <small>18 / 20 registered</small>
+    </div>
+
+    <!-- Tour 4 -->
+    <div class="tour-card" data-region="North">
+      <img src="photo/makecloths.webp" alt="Ha Long Bay">
+      <h4>Traditional hand weaving</h4>
+      <p class="region">Region: North</p>
+      <p class="location">4/16 Ha Giang</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 60%; background: linear-gradient(to right, #04880a, #ce5151);"></div>
+      </div>
+      <small>12 / 20 registered</small>
+    </div>
+  </section>
+
+  <section class="content">
+    <a href="index.html" class="back-btn">← Back to Home</a>
+  </section>
+  <footer>
+    <p>© 2025 AgriTour. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

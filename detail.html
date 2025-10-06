@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AgriCulture</title>
+  <title>Tour</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HEADER PHẦN TRÊN -->
   <header class="top-header">
     <div class="header-left">
       <img src="photo/logo.png" alt="AgriCulture" class="logo">
@@ -16,47 +15,38 @@
     <div class="header-right">
       <a href="#">Log in</a>
       <span>/</span>
-      <a href="#">Sgin in</a>
+      <a href="#">Sign in</a>
       <a href="#" class="cart">🛒 Cart</a>
     </div>
   </header>
 
-  <!-- HEADER PHẦN DƯỚI (MENU) -->
   <nav class="main-nav">
     <ul>
+      <li><a href="index.html">Home</a></li>
       <li><a href="#">About us ▾</a></li>
       <li><a href="#">Our system</a></li>
-      <li><a href="tour.html">Tour</a></li>
+      <li><a href="tour.html" class="active">Tour</a></li>
       <li><a href="#">Discount</a></li>
       <li><a href="#">Business cooperation</a></li>
       <li><a href="#">Recruitment</a></li>
     </ul>
   </nav>
 
-  <!-- ẢNH SLIDER -->
-  <section class="agri">
-    <img id="agri-img" class="agri-img" src="photo/ban1.jpg" alt="Our field">
-    
-    <!-- Nút tròn điều hướng -->
-    <div class="slider-dots">
-      <span class="dot active" onclick="changeImage(0)"></span>
-      <span class="dot" onclick="changeImage(1)"></span>
-      <span class="dot" onclick="changeImage(2)"></span>
-    </div>
-  </section>
-  <script src="script.js"></script>
+  <!-- DETAIL FOR EACH TOUR -->
+   <p class="each-head">Rice Farming</p>
+   <p class="each-detail">.............</p>
+   
+ 
 
-  <!-- NỘI DUNG -->
   <section class="content">
-    <h2>The farm – the first step of your journey to nature.</h2>
-    <p>Join us for an authentic farming adventure — where you learn, grow, and connect with nature.</p>
+    <a href="index.html" class="back-btn">← Back to Home</a>
   </section>
-
-  <!-- FOOTER -->
   <footer>
     <p>© 2025 AgriTour. All rights reserved.</p>
   </footer>
 
+
+  <script src="script.js"></script>
 </body>
 </html>
-<!--https://exercise3-lec1.vercel.app/--> 
+
